@@ -5,55 +5,49 @@
 - [x] Use forms to submit HTTP requests
 - [x] Practice debugging Express
 
-### Yesterday
-- EJS html templating engine
-- Web Server - serve data/documents
+## Express
 
-### CRUD
-- Create - create a new resource
-- Read - all of users user with id of 2
-- Update - update/edit a resource
-- Delete - delete a resource
+A framework that lets us create routes and write/include middleware.
 
-### BREAD
-- Browse
-- Read
-- Edit 
-- Add
-- Delete
+## CRUD / BREAD
 
-### HTTP
-- Hyper-Text Transport Protocol
+**CRUD** = **C**reate **R**ead **U**pdate **D**elete
 
-### Express
-- makes it easier
-- web server in a box
-- allows us to incorporate middleware
+**BREAD** = **B**rowse **R**ead **E**dit **A**dd **D**elete
 
-### Routes
-- PATH www.example.com/users
-- METHOD/VERB: GET, POST, PUT, PATCH, DELETE
+## Routes
 
-### REST
-- REpresentational State Transfer
-- Browse -  GET   /users
-- Read -    GET   /users/2
-- Edit -    POST  /users/2
-- Add -     POST  /users
-- Delete -  POST  /users/2/delete 
+A route is made up of a **VERB** and a **PATH**.
 
+Verbs: **GET**, **POST**, **PUT**, **PATCH**, **DELETE**
 
+Path: `example.com`**/resource**, `example.com`**/resource/:id**
 
+## REST - REpresentational State Transfer
 
+REST means that the path that we are going to should represent the data being transferred.
 
+An API that uses the REST convention is said to be RESTful.
 
+RESTful routes look like:
 
+* Browse: GET  /resource
+* Read:   GET  /resource/:id
+* Edit:   POST /resource/:id
+* Add:    POST /resource
+* Delete: POST /resource/:id/delete
 
+GET /unicorns/123
 
+GET /users/123/posts/12
 
+B - GET /dogs
 
+R - GET /dogs/:id
 
+E - POST /dogs/:id
 
+A - POST /dogs | GET /dogs/new
 
 ### Useful Links
 * [REST](https://en.wikipedia.org/wiki/Representational_state_transfer)
