@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cookies</title>
+</head>
+<body>
+  <h1>All the Cookies!!!!</h1>
+  <ul>
+  <% for (const key in cookies) { %>
+    <li>
+      <a href="/cookies/<%= key %>">
+        <h2>
+          <%= cookies[key].name %> (<%= cookies[key].id %>)
+          <form method="POST" action="/cookies/<%= key %>/delete">
+            <button type="submit">Delete</button>
+          </form>
+        </h2>
+      </a>
+    </li>
+  <% } %>
+  </ul>
+  <a href="/cookies/new">Create New Cookie</a>
+</body>
+</html>

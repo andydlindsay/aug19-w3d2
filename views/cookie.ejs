@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cookie</title>
+</head>
+<body>
+  <a href="/cookies">Home</a>
+  <h1>Just one cookie</h1>
+  <h2><%= cookie.name %> (<%= cookie.id %>)</h2>
+  <h3>Ingredients: <%= cookie.ingredients %></h3>
+
+  <form method="POST" action="/cookies/<%= cookie.id %>">
+    <label for="new-name">New Name:</label>
+    <input id="new-name" name="newName" />
+    <br/>
+    <button type="submit">Edit Cookie</button>
+  </form>
+</body>
+</html>

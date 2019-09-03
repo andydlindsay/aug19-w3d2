@@ -1,9 +1,9 @@
 # W03D02 CRUD with Express
 
 ### To Do
-- [ ] Implement CRUD/BREAD over HTTP with Express
-- [ ] Use forms to submit HTTP requests
-- [ ] Practice debugging Express
+- [x] Implement CRUD/BREAD over HTTP with Express
+- [x] Use forms to submit HTTP requests
+- [x] Practice debugging Express
 
 ### Yesterday
 - EJS html templating engine
@@ -12,7 +12,7 @@
 ### CRUD
 - Create - create a new resource
 - Read - all of users user with id of 2
-- Update - update a resource
+- Update - update/edit a resource
 - Delete - delete a resource
 
 ### BREAD
